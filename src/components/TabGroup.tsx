@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import CollectionSitesTab from '@/components/CollectionSitesTab';
 import DeliverySitesTab from '@/components/DeliverySitesTab';
+import OrderResetTab from '@/components/OrderResetTab';
 import SamplesTab from '@/components/SamplesTab';
 import SmartTubesTab from '@/components/SmartTubesTab';
 import TabPanel from '@/components/TabPanel';
@@ -22,6 +23,7 @@ const TabGroup = () => {
           <Tab label="SmartTubes" />
           <Tab label="Collection sites" />
           <Tab label="Delivery sites" />
+          <Tab label="Order reset" />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -35,6 +37,9 @@ const TabGroup = () => {
       </TabPanel>
       <TabPanel value={value} index={3}>
         <DeliverySitesTab />
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        <OrderResetTab />
       </TabPanel>
     </>
   );
