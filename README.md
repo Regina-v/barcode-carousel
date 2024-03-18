@@ -16,6 +16,7 @@
 ## Setup
 
 1. Clone the repo
+2. Depending on your global yarn version you might have to enable corepack by running `corepack enable`
 1. Run `yarn install`
 1. Run `yarn dev`
 1. Open http://localhost:3000/ in browser
